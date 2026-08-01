@@ -1,0 +1,38 @@
+name: Feature request
+description: Propose a milestone-aligned product capability.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Business problem
+      description: What user or operational outcome needs improvement?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Primary role
+      options:
+        - Visitor
+        - Customer
+        - Technician
+        - Administrator
+        - Engineering/operations
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Security, privacy, and scope risks
+      description: Include authorization, data, money, time, and dependency impact.
+    validations:
+      required: true
